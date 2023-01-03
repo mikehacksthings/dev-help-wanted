@@ -14,4 +14,4 @@ def test_vowels():
     assert main.vowel_captilization("ABC123!") == "Abc123!"
     assert main.vowel_captilization("Hello World") == "hEllO wOrld"
     assert main.vowel_captilization("This is a test") == "thIs Is A tEst"
-    assert main.vowel_captilization("The quick brown fox jumps over the lazy dog") == "thE quIck brOwn fOx jUmps OvEr thE lAzY dOg"
+    assert main.vowel_captilization("The quick brown fox jumps over the lazy dog") == "thE qUIck brOwn fOx jUmps OvEr thE lAzy dOg"
