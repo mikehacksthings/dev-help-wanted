@@ -8,7 +8,8 @@ def remove_odds(nums: set[int]) -> set[int]:
         set[int]: set of integers without odd numbers
     """
     #TODO: implement this function
-    return set()
+    return set(x for x in nums if not x % 2)
+
 
 def vowel_captilization(string: str) -> str:
     """ capitalize all vowels in a string and lowercase all consonants
@@ -20,5 +21,13 @@ def vowel_captilization(string: str) -> str:
         str: string with all vowels capitalized and all consonants lowercased
     """
     #TODO: implement this function
-    return ""
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    ret = ""
+    for c in string:
+        if c.lower() in vowels:
+            ret += c.upper()
+        else:
+            ret += c.lower()
+    return ret
+
 
